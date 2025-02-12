@@ -243,15 +243,10 @@ footer {
     }
 
     /*  Nav en columna */
-    nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-top: 10px; /* Agrega espacio */
-    }
+   
 
     nav ul {
+        margin-right: 40px;
         flex-direction: column;
         align-items: center;
         padding: 0;
@@ -311,14 +306,10 @@ footer {
     }
 
     /*  Nav en columna y bien alineado */
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 15px;
-    }
+    
 
     nav ul {
+        margin-right: 35px;
         flex-direction: column;
         align-items: center;
         padding: 0;

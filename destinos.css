@@ -214,10 +214,12 @@ footer {
         margin-right: 0;
     }
 
+
     /* Nav en columna */
     nav ul {
         flex-direction: column;
         text-align: center;
+        margin-right: 80px;
         gap: 10px;
     }
 
@@ -233,6 +235,10 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+    }
+    details {
+        max-height: 400px;
+        overflow-y: auto;
     }
 
     .imagen {
@@ -257,7 +263,10 @@ footer {
         height: 50px;
     }
 
+    
+
     nav ul {
+        margin-right: 60px;
         flex-direction: column;
         text-align: center;
     }
@@ -270,6 +279,10 @@ footer {
         width: 100%;
     }
 
+    details {
+        max-height: 400px;
+        overflow-y: auto;
+    }
     /* Footer más pequeño */
     footer {
         font-size: 10px;
