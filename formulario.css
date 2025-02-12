@@ -207,44 +207,42 @@ footer {
 
 /*Hacemos responsive*/
 @media screen and (max-width: 768px) {
-
     header {
-    flex-direction: column; /* Logo y título en columna */
-    text-align: center;
-     padding: 20px;
+        flex-direction: column; /* Logo y título en columna */
+        text-align: center;
+        padding: 20px;
     }
 
-   main{
-    min-height: auto;
-   }
-
-   h1 {
-    margin-right: 0; /* Elimina margen extra en el título */
-    font-size: 22px; /* Reduce el tamaño del título */
+    h1 {
+        margin-right: 0; /* Elimina margen extra en el título */
+        font-size: 22px; /* Reduce el tamaño del título */
+    }
+   
+    main{
+        min-height: auto;
     }
 
     #logo {
-    margin-right: 0 auto; /* Centra el logo */
-    display: block;
+        margin-right: 0 auto; /* Centra el logo */
+        display: block;
     }
 
     /*  Nav en columna */
     nav ul {
-    margin-right: 70px;
-    margin-top: 10px;
-    flex-direction: column;
-    text-align: center;
-    gap: 15px;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin-right: 70px;
     }
 
     nav ul li {
-    font-size: 18px;
-    text-align: center;
+        font-size: 18px;
+        text-align: center;
     }
 
     nav ul li a {
-    display: block;
-    padding: 8px 15px;
+        display: block;
+        padding: 8px 15px;
     }
 
     .contacto {
@@ -281,37 +279,38 @@ footer {
 @media screen and (max-width: 576px) {
 
     h1 {
-    font-size: 18px;
-    text-align: center;
-    margin: 0 auto;
+        font-size: 18px; /* Reduce el tamaño del título */
+    }
+
+    /*  Ajuste del logo */
+    #logo {
+        width: 50px;
+        height: 50px;
     }
 
     main{
-    min-height: auto;
+        min-height: auto;
     }
 
-    #logo {
-    width: 50px;
-    height: 50px;
-    }
+    /*  Nav en columna y bien alineado */
 
     nav ul {
-    margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin-right: 50px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        gap: 10px;
+        margin-right: 50px;
     }
 
     nav ul li {
-    font-size: 16px;
+        font-size: 16px;
     }
 
     nav ul li a {
-    display: block;
-     width: 100%;
-     text-align: center;
-    padding: 10px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
     }
 
     label{
