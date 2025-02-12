@@ -1,0 +1,359 @@
+
+html, body{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    font-family: Lato;
+    background-color: rgb(136, 160, 183);
+ }
+ 
+
+header{
+    background-image: url(img/paisaje-inicio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex; /* Hace que los elementos se alineen en línea */
+    align-items: center; /* Alinea verticalmente el logo y el título */
+    justify-content: space-between; /* Coloca el logo a la izquierda y el título al centro */
+    padding:  40px;
+    position: relative; /* Para ajustes de posicionamiento */
+}
+
+h1{
+    font-size: 26px;
+    font-family: cursive;
+     margin-right: 35%;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    
+}
+
+main{
+    flex: 1;
+    min-height: 70%;
+}
+
+#logo{
+    width: 70px; /* Ajusta el tamaño del logo */
+    height: 70px; /* Mantiene la proporción */
+    margin-right: 20px;
+}
+
+nav {
+    position: relative;
+    margin-left: 20px;
+ }
+
+ nav ul {
+     list-style: none; /* Elimina los puntos del listado */
+     display: flex; /* Hace que los enlaces estén en línea */
+     gap: 15px; /* Espaciado entre los elementos */
+ }
+ 
+ /* Estilos para los elementos de la lista */
+ nav ul li {
+     font-family:Verdana, Geneva, Tahoma, sans-serif; /* Cambia la fuente */
+     font-size: 16px; /* Ajusta el tamaño del texto */
+     font-weight: bold; /* Hace que el texto esté en negrita */
+ }
+ 
+ /* Estilos para los enlaces */
+ nav ul li a {
+     text-decoration: none; /* Quita el subrayado de los enlaces */
+     color: #821aa8; /* Color del texto */
+     padding: 5px 10px; /* Agrega espaciado interno */
+     transition: 0.3s; /* Suaviza el cambio de color */
+ }
+
+ nav ul li a:hover {
+    color: whitesmoke; /* Cambia de color al pasar el mouse */
+    background-color: rgb(188, 138, 235);
+    border-radius: 10px;
+}
+
+ #unico{
+    text-decoration: underline;
+ }
+
+ .contacto {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+    margin-top: 70px;
+    padding: 40px;
+    background: aliceblue;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Título del formulario */
+.contacto h2 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #6a0dad;
+}
+
+/* Contenedor general de los inputs */
+.form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Ajuste de ancho de inputs */
+.form-group input,
+.form-group select {
+    flex: 1;
+    padding: 10px;
+    border: 3px solid rgb(134, 213, 231); 
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Estilos generales para inputs y textarea */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Estilos del textarea */
+textarea {
+    width: 90%; /* Mantiene el ancho dentro del formulario */
+    height: 80px; /* Reduce la altura */
+    resize: none; /* Evita que el usuario lo redimensione */
+    padding: 10px;
+    margin-left: 50px;
+    border: 1px solid #a0c4ff;
+    border-radius: 5px;
+}
+
+/* Asegurar que "Mensaje" quede arriba */
+label[for="mensaje"] {
+    display: block;
+    margin-bottom: 10px; /* Añade espacio entre el label y el textarea */
+}
+
+/* Botón de envío */
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    padding: 10px;
+    margin-left: 300px;
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+}
+
+button:hover {
+    background-color: #1d8cbb;
+}
+
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background-color: #0f0e0e;
+    color: white;
+    text-align: center;
+    padding: 7px;
+   position: relative;
+}
+
+.iconos {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.iconos a {
+    font-size: 20px;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.iconos a:hover {
+    transform: scale(1.2);
+}
+
+.iconos a:nth-child(1):hover {
+    color: #1877F2;
+}
+.iconos a:nth-child(2):hover {
+    color: #E1306C;
+}
+.iconos a:nth-child(3):hover {
+    color: #1DA1F2;
+}
+
+
+
+
+/*Hacemos responsive*/
+@media screen and (max-width: 768px) {
+
+    header {
+    flex-direction: column; /* Logo y título en columna */
+    text-align: center;
+     padding: 20px;
+    }
+
+   main{
+    min-height: auto;
+   }
+
+   h1 {
+    margin-right: 0; /* Elimina margen extra en el título */
+    font-size: 22px; /* Reduce el tamaño del título */
+    }
+
+    #logo {
+    margin-right: 0 auto; /* Centra el logo */
+    display: block;
+    }
+
+    nav {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    text-align: center;
+    margin-top: 10px; /* Agrega espacio */
+    }
+
+    /*  Nav en columna */
+    nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    }
+
+    nav ul li {
+    font-size: 18px;
+    text-align: center;
+    }
+
+    nav ul li a {
+    display: block;
+    padding: 8px 15px;
+    }
+
+    .contacto {
+    width: 80%;
+    height: 90%;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: center;
+    }
+
+    .form-group {
+    flex-direction: column;
+    }
+
+    input, select, textarea {
+    text-align: center;
+    width: 80%;
+    margin-left: 30px;
+    }
+
+    textarea {
+    height: 100px;
+    }
+
+    button {
+    width: 80%;
+    margin: 15px auto 0 auto;
+    display: block;
+    }
+   
+}
+
+/* Móviles (≤ 576px) */
+@media screen and (max-width: 576px) {
+
+    h1 {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    main{
+    min-height: auto;
+    }
+
+    #logo {
+    width: 50px;
+    height: 50px;
+    }
+
+    nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    }
+
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+     gap: 10px;
+    }
+
+    nav ul li {
+    font-size: 16px;
+    }
+
+    nav ul li a {
+    display: block;
+     width: 100%;
+     text-align: center;
+    padding: 10px;
+    }
+
+    label{
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .contacto {
+    width: 85%;
+    padding: 15px;
+    }
+
+    .form-group {
+    flex-direction: column;
+    }
+
+    textarea {
+    height: 90px;
+    }
+
+    button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+    }
+
+    /* Footer ajustado para móviles */
+    footer {
+    font-size: 10px;
+    padding: 5px;
+    width: 100%;
+    }
+}
