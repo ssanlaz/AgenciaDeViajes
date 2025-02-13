@@ -246,7 +246,7 @@ footer {
         gap: 20px;
     }
     details {
-        max-height: 400px;
+        max-height: 600px;
         overflow-y: auto;
     }
 
@@ -302,7 +302,7 @@ footer {
     }
 
     details {
-        max-height: 800px;
+        min-height: auto;
         overflow-y: auto;
     }
     /* Footer más pequeño */
